@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9464a12-14d0-418a-8601-8b3323a2a5db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DynamicContracts/QueryInformation.sol" beforeDir="false" afterPath="$PROJECT_DIR$/dynamicContracts/QueryInformation.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/.node-xmlhttprequest-sync-13500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/.node-xmlhttprequest-sync-6892" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/organization1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/organization1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/organization2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/organization2.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/organization3.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/organization3.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pageOrganizationMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageOrganizationMaster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pageSupervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageSupervisor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pageSupervisor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageSupervisor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pageUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/transactionsTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/transactionsTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tpsTest/transactionsTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/AccessControl.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AccessControl.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/truffle-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/truffle-config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1a34dFOdOUtvPK7MHWdInlsDtgM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joona\Documents\RBAC_demo-quorum\tpsTest" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="transactionsTest.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/tpsTest/transactionsTest.js" working-dir="$PROJECT_DIR$/app/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.transactionsTest.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9464a12-14d0-418a-8601-8b3323a2a5db" name="Default Changelist" comment="" />
+      <created>1585951028340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585951028340</updated>
+      <workItem from="1585951030177" duration="2702000" />
+      <workItem from="1585993024636" duration="1689000" />
+      <workItem from="1586011514410" duration="1227000" />
+      <workItem from="1586019196767" duration="215000" />
+      <workItem from="1586020122289" duration="11736000" />
+      <workItem from="1586084010053" duration="4947000" />
+      <workItem from="1586102870333" duration="3635000" />
+      <workItem from="1586293800527" duration="14728000" />
+      <workItem from="1586985414832" duration="2055000" />
+      <workItem from="1587324194129" duration="6558000" />
+      <workItem from="1587491365684" duration="12287000" />
+      <workItem from="1588592869036" duration="5000" />
+      <workItem from="1588593455140" duration="5620000" />
+      <workItem from="1589206461909" duration="4178000" />
+      <workItem from="1589629880282" duration="31983000" />
+      <workItem from="1589983124015" duration="20587000" />
+      <workItem from="1590080384873" duration="19454000" />
+      <workItem from="1590176671990" duration="10250000" />
+      <workItem from="1590226814314" duration="5957000" />
+      <workItem from="1590233187878" duration="76000" />
+      <workItem from="1590233278136" duration="3436000" />
+      <workItem from="1590239654324" duration="10869000" />
+      <workItem from="1590838156277" duration="28107000" />
+      <workItem from="1591137494968" duration="30964000" />
+      <workItem from="1591804131140" duration="18585000" />
+      <workItem from="1592040415504" duration="7182000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590838245331">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1590838245331" />
+    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1586011540322">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1536.824@0.0.1536.824" timestamp="1586011540322" />
+    <state width="1515" height="226" key="GridCell.Tab.0.bottom" timestamp="1591917808044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591917808044" />
+    <state width="1515" height="226" key="GridCell.Tab.0.center" timestamp="1591917808044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591917808044" />
+    <state width="1515" height="226" key="GridCell.Tab.0.left" timestamp="1591917808044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591917808044" />
+    <state width="1515" height="226" key="GridCell.Tab.0.right" timestamp="1591917808044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591917808044" />
+    <state width="1364" height="242" key="GridCell.Tab.1.bottom" timestamp="1586041839029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586041839029" />
+    <state width="1364" height="242" key="GridCell.Tab.1.center" timestamp="1586041839029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586041839029" />
+    <state width="1364" height="242" key="GridCell.Tab.1.left" timestamp="1586041839029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586041839029" />
+    <state width="1364" height="242" key="GridCell.Tab.1.right" timestamp="1586041839029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586041839029" />
+    <state width="1364" height="242" key="GridCell.Tab.2.bottom" timestamp="1586041839030">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586041839030" />
+    <state width="1364" height="242" key="GridCell.Tab.2.center" timestamp="1586041839030">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586041839030" />
+    <state width="1364" height="242" key="GridCell.Tab.2.left" timestamp="1586041839030">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586041839030" />
+    <state width="1364" height="242" key="GridCell.Tab.2.right" timestamp="1586041839030">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586041839030" />
+    <state width="1364" height="242" key="GridCell.Tab.3.bottom" timestamp="1586041839032">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586041839032" />
+    <state width="1364" height="242" key="GridCell.Tab.3.center" timestamp="1586041839031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1586041839031" />
+    <state width="1364" height="242" key="GridCell.Tab.3.left" timestamp="1586041839031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1586041839031" />
+    <state width="1364" height="242" key="GridCell.Tab.3.right" timestamp="1586041839031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1364" height="242" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1586041839031" />
+    <state x="277" y="55" key="SettingsEditor" timestamp="1586014514861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586014514861" />
+    <state x="423" y="189" key="run.anything.popup" timestamp="1591879106648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="423" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591879106648" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590244511588">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590244511588" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="RBAC_demo-eth" type="b2602c69:ProjectViewProjectNode" />
+        <item name="RBAC_demo-eth" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>

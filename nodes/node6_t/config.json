@@ -1,0 +1,66 @@
+{
+   "useWhiteList": true,
+   "disablePeerDiscovery" : true,
+   "jdbc": {
+       "username": "JhsobIuUU0iE6wBSYSZYIpOZWBK5n0uyV1qL5CZTEAc=",
+       "password": "ENC(8+azoRcCIM6h1H6c0Tvgg8EiLlxQb/9V)",
+       "url": "jdbc:h2:/home/quorum_blockchain_thesis/node6_t/db6;MODE=Oracle;TRACE_LEVEL_SYSTEM_OUT=0",
+       "autoCreateTables": true
+   },
+   "serverConfigs":[
+       {
+           "app":"ThirdParty",
+           "enabled": true,
+           "serverAddress": "http://192.168.1.121:9087",
+           "communicationType" : "REST"
+       },
+       {
+           "app":"Q2T",
+           "enabled": true,
+            "serverAddress":"unix:/home/sockets/node6_t/tm.ipc",
+           "communicationType" : "REST"
+       },
+       {
+           "app":"P2P",
+           "enabled": true,
+           "serverAddress":"http://192.168.1.121:9007",
+           "sslConfig": {
+               "tls": "OFF"
+           },
+           "communicationType" : "REST"
+       }
+   ],
+   "peer": [
+        {
+          "url": "http://192.168.1.117:9001"
+        },
+        {
+          "url": "http://192.168.1.117:9002"
+        },
+        {
+          "url": "http://192.168.1.117:9003"
+        },
+        {
+          "url": "http://192.168.1.117:9004"
+        },
+        {
+          "url": "http://192.168.1.121:9005"
+        },
+        {
+          "url": "http://192.168.1.121:9006"
+        },
+        {
+          "url": "http://192.168.1.121:9007"
+        }
+   ],
+   "keys": {
+       "passwordFile": "/home/quorum_blockchain_thesis/node6_t/password.txt",
+       "keyData": [
+           {
+               "privateKeyPath": "/home/quorum_blockchain_thesis/node6_t/node6.key",
+               "publicKeyPath": "/home/quorum_blockchain_thesis/node6_t/node6.pub"
+           }
+       ]
+   },
+   "alwaysSendTo": []
+}

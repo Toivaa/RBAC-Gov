@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RBAC demo</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <div id="no" style="visibility:hidden">
+      <h1>No Access</>
+    </div>
+    <div id="yes" style="visibility:hidden">
+      <h1>Hello Supervisor</h1>
+
+      <h1>Modify Organizations</h1>
+
+      <h3>Add/Delete</h3>
+      <label for="organizationName">Organization</label>
+      <input
+        type="text"
+        id="organizationName"
+      />
+      <label for="urlForAdd">URL (no need for delete)</label>
+      <input
+        type="text"
+        id="urlForAdd"
+      />
+      <button id="Add" onclick="App.addOrganization()">Add</button>
+      <button id="Remove" onclick="App.removeOrganization()">Delete</button>
+
+      <h3>Change Url</h3>
+      <label for="organizationForUrlChange">Organization</label>
+      <input
+        type="text"
+        id="organizationForUrlChange"
+      />
+      <label for="urlChange">URL</label>
+      <input
+        type="text"
+        id="urlChange"
+      />
+      <button id="Add" onclick="App.changeUrl()">Change</button>
+
+      <h3>Check Organization</h3>
+      <label for="organizationForCheck">Name</label>
+      <input
+        type="text"
+        id="organizationForCheck"
+      />
+      <button onclick="App.checkOrganization()">Check</button>
+      <label id="checkedOrganizationUrl"></label>
+
+      <h1>Modify Users</h1>
+
+      <label for="address">Address</label>
+      <input
+        type="text"
+        id="address"
+        placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"
+      />
+      <label for="userLevel">User level</label>
+      <input
+        type="text"
+        id="userLevel"
+        placeholder="e.g. user"
+      />
+
+      <label for="role">Role</label>
+      <input
+        type="text"
+        id="role"
+        placeholder="e.g. officer"
+      />
+
+      <label for="organizationForUser">Organization</label>
+      <input
+        type="text"
+        id="organizationForUser"
+        placeholder="e.g. police"
+      />
+
+      <button onclick="App.addUser()">Add</button>
+      <button onclick="App.deleteUser()">Delete</button>
+      <button onclick="App.modifyUser()">Modify</button>
+
+      <h1>Check User Details</h1>
+      <label for="check">Address:</label>
+      <input
+        type="text"
+        id="check"
+        placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"
+      />
+      <button onclick="App.checkUser()">Check</button>
+      <label id="userCheckedRole"></label>
+
+      <h1>Check Access Right</h1>
+      <label for="organizationForCheckARCheck">Organization where checking</label>
+      <input
+        type="text"
+        id="organizationForCheckARCheck"
+      />
+      <label for="organizationForAccessRight">Organization (for access right)</label>
+      <input
+        type="text"
+        id="organizationForAccessRight"
+      />
+      <label for="roleForCheck">Role</label>
+      <input
+        type="text"
+        id="roleForCheck"
+      />
+      <button onclick="App.checkAccessRight()">Check</button>
+      <label id="accessRightStatus"></label>
+
+      <h1>Check Query Details</h1>
+      <label for="contractAddress">Contract address</label>
+      <input
+        type="text"
+        id="contractAddress"
+      />
+      <button onclick="App.checkQueryDetails()">Check</button>
+      <label id="queryInformation"></label>
+    </div>
+    <script src="pageSupervisor.js"></script>
+  </body>
+</html>

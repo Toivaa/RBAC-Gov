@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RBAC demo</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <div id="no" style="visibility:hidden">
+      <h1>No Access</>
+    </div>
+    <div id="yes" style="visibility:hidden">
+      <h1>Hello User</h1>
+
+      <h1>Connect</h1>
+      <label for="organizationWhereConnecting">Organizatio name</label>
+      <input
+        type="text"
+        id="organizationWhereConnecting"
+      />
+      <button id="Add" onclick="App.Connect()">Connect</button>
+    </div>
+    <script src="pageUser.js"></script>
+  </body>
+</html>

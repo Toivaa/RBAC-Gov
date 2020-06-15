@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RBAC demo</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <div id="no" style="visibility:hidden">
+      <h1>No Access</>
+    </div>
+    <div id="yes" style="visibility:hidden">
+      <h1>Organization 3 Database</h1>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+      />
+      <label for="url">Node address</label>
+      <input
+              type="text"
+              id="url"
+      />
+      <h1>Query</h1>
+
+      <label for="query">Insert Query</label>
+      <input
+        type="text"
+        id="query"
+      />
+      <button onclick="App.query()">Search</button>
+    </div>
+    <script type="text/javascript" src="organization3.js"></script>
+  </body>
+</html>

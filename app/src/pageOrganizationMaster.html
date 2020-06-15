@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RBAC demo</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <div id="no" style="visibility:hidden">
+      <h1>No Access</>
+    </div>
+    <div id="yes" style="visibility:hidden">
+      <h1>Hello Organization Master</h1>
+      <h1>Modify Access Right</h1>
+      <label for="organizationForAccessRight">Organization</label>
+      <input
+      type="text"
+      id="organizationForAccessRight"
+      />
+      <label for="roleForAccessRight">Role</label>
+      <input
+      type="text"
+      id="roleForAccessRight"
+      />
+      <button id="Add" onclick="App.addAccessRight()">Add</button>
+      <button id="Add" onclick="App.removeAccessRight()">Remove</button>
+      <h1>Connect</h1>
+      <label for="organization">Organizatio name</label>
+      <input
+        type="text"
+        id="organizationWhereConnecting"
+      />
+      <button id="Add" onclick="App.connect()">Connect</button>
+      <h1>Check Access Right</h1>
+      <label for="organizationForCheck">Organization</label>
+      <input
+        type="text"
+        id="organizationForCheck"
+      />
+      <label for="roleForCheck">Role</label>
+      <input
+        type="text"
+        id="roleForCheck"
+      />
+      <button onclick="App.check()">Check</button>
+      <label id="accessRightStatus"></label>
+    </div>
+    <script src="pageOrganizationMaster.js"></script>
+  </body>
+</html>
