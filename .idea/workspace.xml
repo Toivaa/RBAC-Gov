@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9464a12-14d0-418a-8601-8b3323a2a5db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicContracts/QueryInformation.sol" beforeDir="false" afterPath="$PROJECT_DIR$/dynamicContracts/QueryInformation.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/.node-xmlhttprequest-sync-13500" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/.node-xmlhttprequest-sync-6892" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/organization1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/organization1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/organization2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/organization2.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/organization3.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/organization3.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/organization3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pageOrganizationMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageOrganizationMaster.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pageSupervisor.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageSupervisor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pageSupervisor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageSupervisor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pageUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/transactionsTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/transactionsTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tpsTest/transactionsTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/AccessControl.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AccessControl.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/truffle-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/truffle-config.js" afterDir="false" />
-    </list>
+    <list default="true" id="b9464a12-14d0-418a-8601-8b3323a2a5db" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
