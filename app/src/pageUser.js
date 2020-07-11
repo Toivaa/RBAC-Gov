@@ -40,7 +40,7 @@ const App = {
   Connect: async function() {
     var organization = document.getElementById("organizationWhereConnecting").value;
 
-    await this.aC.getUrl.call(organization, function (error, result){
+    await this.aC.getURL.call(organization, function (error, result){
       console.log(result);
       if (result.toString() == "") {
         window.alert("No such organization");

@@ -56,7 +56,7 @@ const App = {
   connect: async function() {
     var organization = document.getElementById("organizationWhereConnecting").value;
 
-    await this.aC.getUrl.call(organization, function (error, result){
+    await this.aC.getURL.call(organization, function (error, result){
       console.log(result);
       if (result.toString() == "") {
         window.alert("No such organization");
@@ -71,7 +71,7 @@ const App = {
     var organization = document.getElementById("organizationForCheck").value;
     var role = document.getElementById("roleForCheck").value;
 
-    await this.aC.checkAccessRightOfRole.call(organization, role, function (error, result){
+    await this.aC.checkRoleAccessRight.call(organization, role, function (error, result){
         document.getElementById("accessRightStatus").innerHTML = result;
     });
   },

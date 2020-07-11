@@ -206,7 +206,7 @@ contract AccessControl {
       * @param _organizationWhereConnecting organization where the access right is checked
       * @return does the user have an access right or not
     */
-    function checkAccess(string memory _organizationWhereConnecting) view public returns(string memory){
+    function checkAccessRight(string memory _organizationWhereConnecting) view public returns(string memory){
         AccessControl.User storage user = users[msg.sender];
         AccessControl.Organization storage targetOrganization = organizations[_organizationWhereConnecting];
         string memory orgAndRole = string(abi.encodePacked(user.organization, user.role));
@@ -221,7 +221,7 @@ contract AccessControl {
       * @param _role role
       * @return has access or not
     */
-    function checkAccessRightOfRole(string memory _organization, string memory _role) view onlyOrganizationMaster public returns(string memory) {
+    function checkRoleAccessRight(string memory _organization, string memory _role) view onlyOrganizationMaster public returns(string memory) {
         AccessControl.Organization storage organization = organizations[users[msg.sender].organization];
         string memory orgAndRole = string(abi.encodePacked(_organization, _role));
         if (organization.accessRights[orgAndRole].hasAccess == 1) {
@@ -236,7 +236,7 @@ contract AccessControl {
       * @param _role role
       * @return organization does not exist or if the organizations exist, has access or not
     */
-    function checkAccessRightOfRoleSupervisors(string memory organizationWhereChecking, string memory _organization, string memory _role) view onlySupervisor public returns(string memory) {
+    function checkRoleAccessRightSupervisor(string memory organizationWhereChecking, string memory _organization, string memory _role) view onlySupervisor public returns(string memory) {
         AccessControl.Organization storage organizationWhereCheckingAR = organizations[organizationWhereChecking];
         string memory orgAndRole = string(abi.encodePacked(_organization, _role));
         if (organizations[organizationWhereChecking].exists == 0) {

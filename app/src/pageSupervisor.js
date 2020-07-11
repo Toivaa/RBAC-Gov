@@ -111,7 +111,7 @@ const App = {
     var organizationForAR = document.getElementById("organizationForAccessRight").value;
     var role = document.getElementById("roleForCheck").value;
 
-    await this.aC.checkAccessRightOfRoleSupervisors.call(organizationForCheck, organizationForAR, role, function (error, result){
+    await this.aC.checkRoleAccessRightSupervisor.call(organizationForCheck, organizationForAR, role, function (error, result){
         document.getElementById("accessRightStatus").innerHTML = result;
     });
   },
