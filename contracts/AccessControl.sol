@@ -231,7 +231,7 @@ contract AccessControl {
     }
 
     /** @notice the function checks can the role access an organization's database, and is used by the supervisors
-      * @param organizationWhereChecking organization where access right is checked
+      * @param organizationWhereChecking organization where the access right is checked
       * @param _organization organization
       * @param _role role
       * @return organization not exists or if the organizations exist, has access or not
