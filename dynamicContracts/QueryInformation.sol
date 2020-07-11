@@ -1,8 +1,8 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-/** @title Query information contract
-  * @notice This contract stores the information
-  * of a performed query.
+/** @title Query information smart contract
+  * @notice the smart contract stores the information
+  * of a performed query
   */
 contract QueryInformation {
     string private query;
@@ -26,16 +26,16 @@ contract QueryInformation {
         supervisors[0x7b90d9854FC1d06448Cb9EE899a2d2d5790A235f].hasAccess = 1;
     }
 
-    /** @notice to make sure caller is a supervisor
+    /** @notice the modifier to make sure the msg.sender is a supervisor
     */
     modifier onlySupervisor () {
         require(supervisors[msg.sender].hasAccess == 1);
         _;
     }
 
-    /** @notice This function checks the query details
-      * @return organization where the query was performed
-      * @return address of a user who did the query
+    /** @notice the function checks the query details
+      * @return organization
+      * @return public address
       * @return query content
       */
     function checkQueryDetails() view onlySupervisor public returns(string memory, address, string memory) {

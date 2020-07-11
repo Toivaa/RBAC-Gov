@@ -101,7 +101,7 @@ const App = {
     var organization = document.getElementById("organizationForCheck").value;
 
     await this.aC.checkOrganization.call(organization, function (error, result){
-        document.getElementById("checkedOrganizationUrl").innerHTML ="Exists: " +
+        document.getElementById("checkedOrganizationUrl").innerHTML ="exists: " +
         result[0].toString() + ", url: " + result[1].toString();
     });
   },
