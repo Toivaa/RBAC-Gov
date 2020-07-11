@@ -1,7 +1,7 @@
 pragma solidity >=0.4.21 <0.6.0;
 
 /** @title Access control contract
-  * @notice This conract holds the implementation
+  * @notice This contract holds the implementation
   * logic of the role-based access control
   */
 contract AccessControl {
@@ -36,14 +36,14 @@ contract AccessControl {
         user.exists = 1;
     }
 
-    /** @notice to make sure the caller user level is supervisor or the caller is owner of the contract
+    /** @notice to make sure the caller user-level is supervisor or the caller is the owner of the contract
     */
     modifier onlySupervisor {
         require(msg.sender == owner || keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("supervisor")));
         _;
     }
 
-    /** @notice to make sure the caller user level is organization master
+    /** @notice to make sure the caller user-level is organization master
     */
     modifier onlyOrganizationMaster {
         require(keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("organization master")));
@@ -52,7 +52,7 @@ contract AccessControl {
 
     /** @notice this function adds a new user
       * @param _address public address of the user
-      * @param _userLevel userlevel of the user
+      * @param _userLevel user-level of the user
       * @param _role role of the user
       * @param _organization organization of the user
       */
@@ -79,7 +79,7 @@ contract AccessControl {
 
     /** @notice this function modifies a user's attributes
       * @param _address public address of the user
-      * @param _userLevel user level of the user
+      * @param _userLevel user-level of the user
       * @param _role role of the user
       * @param _organization organization of the user
       */
@@ -97,8 +97,8 @@ contract AccessControl {
         }
     }
 
-    /** @notice this function checks the user level of the user who calls the function
-      * @return user level of the caller
+    /** @notice this function checks the user-level of the user who calls the function
+      * @return user-level of the caller
       */
     function checkUserLevel() view public returns(string memory){
          return (users[msg.sender].userLevel);
@@ -107,7 +107,7 @@ contract AccessControl {
     /** @notice this function checks the attributes of a user
       * @param _address public address of the user
       * @return does the user exist
-      * @return user level of the user
+      * @return user-level of the user
       * @return role of the user
       * @return organization of the user
       */
@@ -118,7 +118,7 @@ contract AccessControl {
     /** @notice this function is used for checking the details of an organization
       * @param _organization the organization that is checked
       * @return does the organization exist
-      * @return url of the organization
+      * @return URL of the organization
     */
     function checkOrganization(string memory _organization) view onlySupervisor public returns(string memory, string memory){
         if (organizations[_organization].exists == 0) {
@@ -127,18 +127,18 @@ contract AccessControl {
         return ("does exist", organizations[_organization].website);
     }
 
-    /** @notice this function is used for getting the url of an organization
-      * @param _organization the organization which url is requested
-      * @return url of the organization
+    /** @notice this function is used for getting the URL of an organization
+      * @param _organization the organization which URL is requested
+      * @return URL of the organization
     */
     function getUrl(string memory _organization) view public returns(string memory){
         string memory url = organizations[_organization].website;
         return url;
     }
 
-    /** @notice this function changes the url of an organization
-      * @param _organization organization which url is changed
-      * @param _url url of the organizations
+    /** @notice this function changes the URL of an organization
+      * @param _organization organization which URL is changed
+      * @param _url URL of the organizations
     */
     function changeUrlOrganization(string memory _organization, string memory _url) onlySupervisor public{
         require(organizations[_organization].exists == 1);
@@ -147,7 +147,7 @@ contract AccessControl {
 
     /** @notice this function adds a new organization
       * @param _organization name of the organization
-      * @param _url url of the organization
+      * @param _url URL of the organization
     */
     function addOrganization(string memory _organization, string memory _url) onlySupervisor public{
         AccessControl.Organization storage organization = organizations[_organization];
@@ -204,7 +204,7 @@ contract AccessControl {
 
     /** @notice this function checks does a user have an access right
       * @param _organizationWhereConnecting organization where the access right is checked
-      * @return does user have an access right or not
+      * @return does the user have an access right or not
     */
     function checkAccess(string memory _organizationWhereConnecting) view public returns(string memory){
         AccessControl.User storage user = users[msg.sender];
@@ -216,7 +216,7 @@ contract AccessControl {
         return "no access";
     }
 
-    /** @notice this function checks an access right status in an organization
+    /** @notice this function checks access right status in an organization
       * @param _organization organization
       * @param _role role
       * @return has access or not
@@ -230,11 +230,11 @@ contract AccessControl {
         return "No access";
     }
 
-    /** @notice this function checks an access right status in an organization, used by supervisors
+    /** @notice this function checks access right status in an organization, used by supervisors
       * @param organizationWhereChecking organization where access right is checked
       * @param _organization organization
       * @param _role role
-      * @return organization does not exist or if the organizations exists, has access or not
+      * @return organization does not exist or if the organizations exist, has access or not
     */
     function checkAccessRightOfRoleSupervisors(string memory organizationWhereChecking, string memory _organization, string memory _role) view onlySupervisor public returns(string memory) {
         AccessControl.Organization storage organizationWhereCheckingAR = organizations[organizationWhereChecking];

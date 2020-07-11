@@ -55,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thesis-demo_git/RBAC-Gov" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
@@ -109,7 +109,8 @@
       <workItem from="1590838156277" duration="28107000" />
       <workItem from="1591137494968" duration="30964000" />
       <workItem from="1591804131140" duration="18585000" />
-      <workItem from="1592040415504" duration="7182000" />
+      <workItem from="1592040415504" duration="7782000" />
+      <workItem from="1593974294877" duration="5333000" />
     </task>
     <servers />
   </component>
@@ -125,6 +126,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1536.824@0.0.1536.824" timestamp="1586011540322" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1594462873031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594462873031" />
     <state width="1515" height="226" key="GridCell.Tab.0.bottom" timestamp="1591917808044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

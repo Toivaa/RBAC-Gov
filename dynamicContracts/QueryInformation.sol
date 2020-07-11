@@ -26,7 +26,7 @@ contract QueryInformation {
         supervisors[0x7b90d9854FC1d06448Cb9EE899a2d2d5790A235f].hasAccess = 1;
     }
 
-    /** @notice to make sure caller is supervisor
+    /** @notice to make sure caller is a supervisor
     */
     modifier onlySupervisor () {
         require(supervisors[msg.sender].hasAccess == 1);
@@ -34,8 +34,8 @@ contract QueryInformation {
     }
 
     /** @notice This function checks the query details
-      * @return organization where query was performed
-      * @return address of user who did the query
+      * @return organization where the query was performed
+      * @return address of a user who did the query
       * @return query content
       */
     function checkQueryDetails() view onlySupervisor public returns(string memory, address, string memory) {
