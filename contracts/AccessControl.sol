@@ -36,14 +36,14 @@ contract AccessControl {
         user.exists = 1;
     }
 
-    /** @notice the modifier to make sure the msg.sender's user-level is "supervisor" or the msg.sender is the owner of the contract
+    /** @notice the function modifier to make sure the msg.sender's user-level is "supervisor" or the msg.sender is the owner of the contract
     */
     modifier onlySupervisor {
         require(msg.sender == owner || keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("supervisor")));
         _;
     }
 
-    /** @notice the modifier to make sure the msg.sender's user-level is "organization master"
+    /** @notice the function modifier to make sure the msg.sender's user-level is "organization master"
     */
     modifier onlyOrganizationMaster {
         require(keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("organization master")));
@@ -122,9 +122,9 @@ contract AccessControl {
     */
     function checkOrganization(string memory _organization) view onlySupervisor public returns(string memory, string memory){
         if (organizations[_organization].exists == 0) {
-            return ("not exists", "");
+            return ("No", "");
         }
-        return ("does exist", organizations[_organization].website);
+        return ("Yes", organizations[_organization].website);
     }
 
     /** @notice the function is used for getting the URL of an organization
@@ -204,7 +204,7 @@ contract AccessControl {
 
     /** @notice the function is used for checking is the msg.sender able to access the given organization's database
       * @param _organizationWhereConnecting organization where the access right is checked
-      * @return does the user have access right or not
+      * @return can the user access the database or not
     */
     function checkAccessRight(string memory _organizationWhereConnecting) view public returns(string memory){
         AccessControl.User storage user = users[msg.sender];
@@ -240,7 +240,7 @@ contract AccessControl {
         AccessControl.Organization storage organizationWhereCheckingAR = organizations[organizationWhereChecking];
         string memory orgAndRole = string(abi.encodePacked(_organization, _role));
         if (organizations[organizationWhereChecking].exists == 0) {
-            return "Given organization not exists";
+            return "No such organization";
         }
         if (organizationWhereCheckingAR.accessRights[orgAndRole].hasAccess == 1) {
             return "Access given";

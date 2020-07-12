@@ -26,7 +26,7 @@ contract QueryInformation {
         supervisors[0x7b90d9854FC1d06448Cb9EE899a2d2d5790A235f].hasAccess = 1;
     }
 
-    /** @notice the modifier to make sure the msg.sender is a supervisor
+    /** @notice the function modifier to make sure the msg.sender is a supervisor
     */
     modifier onlySupervisor () {
         require(supervisors[msg.sender].hasAccess == 1);
