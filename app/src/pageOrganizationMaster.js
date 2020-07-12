@@ -71,7 +71,7 @@ const App = {
     var organization = document.getElementById("organizationForCheck").value;
     var role = document.getElementById("roleForCheck").value;
 
-    await this.aC.checkRoleAccessRight.call(organization, role, function (error, result){
+    await this.aC.checkAccessRight.call(organization, role, function (error, result){
         document.getElementById("accessRightStatus").innerHTML = result;
     });
   },
