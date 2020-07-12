@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b9464a12-14d0-418a-8601-8b3323a2a5db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pageSupervisor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageSupervisor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pageOrganizationMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageOrganizationMaster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pageUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pageUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/AccessControl.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/AccessControl.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,7 @@
       <workItem from="1591804131140" duration="18585000" />
       <workItem from="1592040415504" duration="7782000" />
       <workItem from="1593974294877" duration="5333000" />
-      <workItem from="1594559329349" duration="2534000" />
+      <workItem from="1594559329349" duration="4253000" />
     </task>
     <servers />
   </component>
