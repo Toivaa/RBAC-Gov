@@ -68,7 +68,11 @@ const App = {
 
     await this.aC.checkUser.call(user, function (error, result){
         console.log(result);
-        document.getElementById("userCheckedRole").innerHTML = "exists:" + result[0].toString() + ", user level: " +
+        var exists = "No";
+        if (result[0].toString() == "1") {
+            exists = "Yes";
+        }
+        document.getElementById("userCheckedRole").innerHTML = "exists: " + exists + ", user-level: " +
         result[1].toString() + ", role: " + result[2].toString() + ",  organization: " + result[3];
     });
   },
