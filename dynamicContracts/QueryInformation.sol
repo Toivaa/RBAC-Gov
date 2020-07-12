@@ -34,9 +34,9 @@ contract QueryInformation {
     }
 
     /** @notice the function checks the query details
-      * @return organization
-      * @return public address
-      * @return query content
+      * @return the organization
+      * @return the public address
+      * @return the query content
       */
     function checkQueryDetails() view onlySupervisor public returns(string memory, address, string memory) {
         return (organization, queryPerformer, query);

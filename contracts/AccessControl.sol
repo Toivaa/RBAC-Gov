@@ -51,10 +51,10 @@ contract AccessControl {
     }
 
     /** @notice the function adds a new user
-      * @param _address public address of the user
-      * @param _userLevel user-level of the user
-      * @param _role role of the user
-      * @param _organization organization of the user
+      * @param _address the public address of the user
+      * @param _userLevel the user-level of the user
+      * @param _role the role of the user
+      * @param _organization the organization of the user
       */
     function addUser(address _address, string memory _userLevel, string memory _role, string memory _organization) onlySupervisor public{
         AccessControl.User storage user = users[_address];
@@ -66,7 +66,7 @@ contract AccessControl {
     }
 
     /** @notice the function removes a user
-      * @param _address public address of the user
+      * @param _address the public address of the user
       */
     function removeUser(address _address) onlySupervisor public {
         AccessControl.User storage user = users[_address];
@@ -78,10 +78,10 @@ contract AccessControl {
     }
 
     /** @notice the function modifies a user's attributes
-      * @param _address public address of the user
-      * @param _userLevel user-level of the user
-      * @param _role role of the user
-      * @param _organization organization of the user
+      * @param _address the public address of the user
+      * @param _userLevel the user-level of the user
+      * @param _role the role of the user
+      * @param _organization the organization of the user
       */
     function modifyUser(address _address, string memory _userLevel, string memory _role,  string memory _organization) onlySupervisor public {
         AccessControl.User storage user = users[_address];
@@ -98,18 +98,18 @@ contract AccessControl {
     }
 
     /** @notice the function checks the user-level of the user who calls the function
-      * @return user-level of the msg.sender
+      * @return the user-level of the msg.sender
       */
     function checkUserLevel() view public returns(string memory){
          return (users[msg.sender].userLevel);
     }
 
     /** @notice the function checks the attributes of a user
-      * @param _address public address of the user
+      * @param _address the public address of the user
       * @return does the user exists
-      * @return user-level of the user
-      * @return role of the user
-      * @return organization of the user
+      * @return the user-level of the user
+      * @return the role of the user
+      * @return the organization of the user
       */
     function checkUser(address _address) view onlySupervisor public returns(uint, string memory, string memory, string memory){
          return (users[_address].exists, users[_address].userLevel, users[_address].role, users[_address].organization);
@@ -117,8 +117,8 @@ contract AccessControl {
 
     /** @notice the function is used for checking the details of an organization
       * @param _organization the organization that is checked
-      * @return does the organization exist
-      * @return URL of the organization
+      * @return does the organization exists
+      * @return the URL of the organization
     */
     function checkOrganization(string memory _organization) view onlySupervisor public returns(string memory, string memory){
         if (organizations[_organization].exists == 0) {
@@ -129,7 +129,7 @@ contract AccessControl {
 
     /** @notice the function is used for getting the URL of an organization
       * @param _organization the organization which URL is requested
-      * @return URL of the organization
+      * @return the URL of the organization
     */
     function getUrl(string memory _organization) view public returns(string memory){
         string memory url = organizations[_organization].website;
@@ -138,7 +138,7 @@ contract AccessControl {
 
     /** @notice the function changes the URL of an organization
       * @param _organization the organization which URL is changed
-      * @param _url URL of the organization
+      * @param _url the URL of the organization
     */
     function changeUrlOrganization(string memory _organization, string memory _url) onlySupervisor public{
         require(organizations[_organization].exists == 1);
@@ -146,8 +146,8 @@ contract AccessControl {
     }
 
     /** @notice the function adds a new organization
-      * @param _organization name of the organization
-      * @param _url URL of the organization
+      * @param _organization the name of the organization
+      * @param _url the URL of the organization
     */
     function addOrganization(string memory _organization, string memory _url) onlySupervisor public{
         AccessControl.Organization storage organization = organizations[_organization];
@@ -172,8 +172,8 @@ contract AccessControl {
     }
 
     /** @notice the function adds a new access right
-      * @param _organization organization
-      * @param _role role
+      * @param _organization the organization
+      * @param _role the role
       */
     function addAccessRight(string memory _organization, string memory _role) onlyOrganizationMaster public {
         string memory orgAndRole = string(abi.encodePacked(_organization, _role));
@@ -185,8 +185,8 @@ contract AccessControl {
     }
 
     /** @notice the function removes an access right
-      * @param _organization organization
-      * @param _role role
+      * @param _organization the organization
+      * @param _role the role
       */
     function removeAccessRight(string memory _organization, string memory _role) onlyOrganizationMaster public{
         string memory orgAndRole = string(abi.encodePacked(_organization, _role));
@@ -203,7 +203,7 @@ contract AccessControl {
     }
 
     /** @notice the function is used for checking is the msg.sender able to access the given organization's database
-      * @param _organizationWhereConnecting organization where the access right is checked
+      * @param _organizationWhereConnecting the organization where the access right is checked
       * @return can the user access the database or not
     */
     function checkAccess(string memory _organizationWhereConnecting) view public returns(string memory){
@@ -217,9 +217,9 @@ contract AccessControl {
     }
 
     /** @notice the function checks can the role access an organization's database, and is used by organization masters
-      * @param _organization organization
-      * @param _role role
-      * @return has access or not
+      * @param _organization the organization
+      * @param _role the role
+      * @return can access or not
     */
     function checkAccessRight(string memory _organization, string memory _role) view onlyOrganizationMaster public returns(string memory) {
         AccessControl.Organization storage organization = organizations[users[msg.sender].organization];
@@ -231,10 +231,10 @@ contract AccessControl {
     }
 
     /** @notice the function checks can the role access an organization's database, and is used by the supervisors
-      * @param organizationWhereChecking organization where the access right is checked
-      * @param _organization organization
-      * @param _role role
-      * @return organization not exists or if the organizations exist, has access or not
+      * @param organizationWhereChecking the organization where the access right is checked
+      * @param _organization the organization
+      * @param _role the role
+      * @return no such organization or if the organization exists can access or not
     */
     function checkAccessRightSupervisor(string memory organizationWhereChecking, string memory _organization, string memory _role) view onlySupervisor public returns(string memory) {
         AccessControl.Organization storage organizationWhereCheckingAR = organizations[organizationWhereChecking];
