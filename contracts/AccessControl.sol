@@ -30,23 +30,23 @@ contract AccessControl {
     constructor() public {
         owner = msg.sender;
         AccessControl.User storage user = users[msg.sender];
-        user.userLevel = "supervisor";
-        user.role = "supervisor";
-        user.organization = "supervisor 1";
+        user.userLevel = "Supervisor";
+        user.role = "Supervisor";
+        user.organization = "Supervisor 1";
         user.exists = 1;
     }
 
-    /** @notice the function modifier to make sure the msg.sender's user-level is "supervisor" or the msg.sender is the owner of the contract
+    /** @notice the function modifier to make sure the msg.sender's user-level is "Supervisor" or the msg.sender is the owner of the contract
     */
     modifier onlySupervisor {
-        require(msg.sender == owner || keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("supervisor")));
+        require(msg.sender == owner || keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("Supervisor")));
         _;
     }
 
-    /** @notice the function modifier to make sure the msg.sender's user-level is "organization master"
+    /** @notice the function modifier to make sure the msg.sender's user-level is "Organization Master"
     */
     modifier onlyOrganizationMaster {
-        require(keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("organization master")));
+        require(keccak256(abi.encodePacked(users[msg.sender].userLevel)) == keccak256(abi.encodePacked("Organization Master")));
         _;
     }
 

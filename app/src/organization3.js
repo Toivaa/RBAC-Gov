@@ -20,7 +20,7 @@ const App = {
       web3.eth.defaultAccount = web3.eth.accounts[0];
       this.account = web3.eth.accounts[0];
 
-      this.aC.checkAccess.call("organization 3", function (error, result){
+      this.aC.checkAccess.call("Organization 3", function (error, result){
           console.log(result);
           App.contractAddress = result;
           if (result == "Access given") {
@@ -61,7 +61,7 @@ const App = {
   },
 
   deployContract: async function() {
-      var organization = "organization 3";
+      var organization = "Organization 3";
       var query = document.getElementById("query").value;
 
       await this.web3_2.eth.contract(abi_Query).new(organization, query, {gas:2000000, gasPrice: 0, from: this.account, data: '0x' + bytecode.object, privateFor: ["cTq/Sd5hO3NUtCSJBqgHltSLryCn3y2oha3YgXGIUEU=", "YKNzi8JfD1pSQyCM5Lsh2YOoJVPFwFLoo/1EJuY9EG8=", "Bt55dfENcZN1tldsqD/OjIKaQ3WEYV0qYlySGP3051Q=", "L2w5WP4tADjYKA0B2If1t60nVstvUY6vUSj3SLhisQc="]}, (error, result) => {

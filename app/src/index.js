@@ -25,13 +25,13 @@ const App = {
   logIn: async function() {
     await this.aC.checkUserLevel.call(function (error, result){
         console.log(result);
-        if (result.toString() == "supervisor") {
+        if (result.toString() == "Supervisor") {
           window.location.replace("/pageSupervisor.html");
         }
-        else if (result.toString() == "organization master") {
+        else if (result.toString() == "Organization Master") {
           window.location.replace("/pageOrganizationMaster.html");
         }
-        else if (result.toString() == "user") {
+        else if (result.toString() == "User") {
           window.location.replace("/pageUser.html");
         }
         else {

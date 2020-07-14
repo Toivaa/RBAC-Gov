@@ -16,7 +16,7 @@ const App = {
       web3.eth.defaultAccount = web3.eth.accounts[0];
       this.account = web3.eth.accounts[0];
       await this.aC.checkUserLevel.call(function (error, result){
-        if (result == "user") {
+        if (result == "User") {
           var div1 = document.getElementById("no");
           var div2 = document.getElementById("yes");
           div1.style.visibility = 'hidden';
