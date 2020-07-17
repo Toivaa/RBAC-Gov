@@ -35,7 +35,7 @@ const App = {
           window.location.replace("/pageUser.html");
         }
         else {
-          window.alert("noAccess.html");
+          window.alert("no access");
         }
     });
   },
