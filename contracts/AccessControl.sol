@@ -216,7 +216,7 @@ contract AccessControl {
         return "No access";
     }
 
-    /** @notice the function checks can the role access an organization's database, and is used by the users that hold the user-level of “Organization Master"
+    /** @notice the function checks can the role access an organization's database, and is used by the users that have the user-level “Organization Master"
       * @param _organization the organization
       * @param _role the role
       * @return can access or not
@@ -230,7 +230,7 @@ contract AccessControl {
         return "No access";
     }
 
-    /** @notice the function checks can the role access an organization's database, and is used by the users that hold the user-level of “Supervisor"
+    /** @notice the function checks can the role access an organization's database, and is used by the users that have the user-level “Supervisor"
       * @param organizationWhereChecking the organization where the access right is checked
       * @param _organization the organization
       * @param _role the role
