@@ -1,6 +1,6 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-/** @title Access control smart contract
+/** @title Access Control Smart Contract
   * @notice the smart contract stores the information
   * of the role-based access control
   */

@@ -1,6 +1,6 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-/** @title Query information smart contract
+/** @title Query Information Smart Contract
   * @notice the smart contract stores the information
   * of a performed query
   */
