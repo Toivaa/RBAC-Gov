@@ -1,7 +1,7 @@
 Author: Joonas Toivanen
 email: joonas.toivanen@elisanet.fi
 
-This is the demo implementation of the proposed RBAC-Gov architecture of the "Design and Implementation of Role-Based Access Control System for Government Data Sharing Using Blockchain" master's thesis.
+This is the demo implementation of the proposed RBAC-Gov architecture of the "Design and Implementation of Blockchain-Based RBAC for Government Data Sharing Systems" master's thesis.
 
 The demo implementation is a decentralized application (Dapp) build with using Truffle. It was build on top of Webpack box (https://www.trufflesuite.com/boxes/webpack). Truffle documentation (https://www.trufflesuite.com/docs/truffle/overview) offers help how to run the Dapp.
 
